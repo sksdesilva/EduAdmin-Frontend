@@ -1,0 +1,13 @@
+.card.text-black{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.vh-100{
+    height: 10000px;
+}
+body{
+    background-color: #cd7373;
+}
+.errorMsg{
+    color: red;
+}

@@ -1,0 +1,48 @@
+<app-nav-bar [setButton]="Button"></app-nav-bar>
+<div class="container">
+ <div class="row">
+  <div class="col-2">
+    <p class="topic">ID</p>
+  </div>
+  <div class="col-2">
+    <p class="topic">Username</p>
+  </div>
+  <div class="col-2">
+    <p class="topic">Country</p>
+  </div>
+  <div class="col-2">
+    <p class="topic">Email</p>
+  </div>
+  <div class="col-2">
+    
+  </div>
+  <div class="col-2">
+    
+  </div>
+ </div>
+</div>
+
+    <div class="container" *ngFor="let post of posts">
+      <div class="row">
+        <div class="col-2">
+            <p>{{post.id}}</p>
+          </div>
+          <div class="col-2">
+            <p>{{post.username}}</p>
+          </div>
+            <div class="col-2">
+            <p>{{post.country}}</p>
+          </div>
+            <div class="col-2">
+            <p>{{post.email}}</p>
+          </div>
+            <div class="col-2">
+            <p><button class="btn btn-primary" (click)="onUpdate(post.id)">Update</button></p>
+          </div>
+            <div class="col-2">
+            <p><button class="btn btn-danger"(click)="onDelete(post.id)">Delete</button></p>
+          </div>
+          </div>
+    </div>
+
+  
